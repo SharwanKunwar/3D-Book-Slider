@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+html,body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: radial-gradient(#5a47ce, #232323 80%);
+}
+.outline-text {
+  -webkit-text-stroke: 1px white;
+}
+
+@keyframes horizontal-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes horizontal-scroll-2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-horizontal-scroll {
+  animation: horizontal-scroll 40s linear infinite;
+}
+
+.animate-horizontal-scroll-2 {
+  animation: horizontal-scroll-2 40s linear infinite;
+}
