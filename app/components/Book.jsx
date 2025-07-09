@@ -26,10 +26,9 @@ const Page = ({number, front, back, ...props}) => {
 
     return(
         <group {...props} ref={group}>
-                <mesh scale={0.1}>
+                <mesh scale={1}>
                     <primitive object={pageGeometry} attach={"geometry"}/>
                     <meshBasicMaterial color='red'/>
-                    
                 </mesh>
         </group>
     )
